@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+    background-color: rgb(224, 226, 104, 0.3);
+}
+
+header {
+    background-color: rgba(223, 223, 74, 0.3);
+    border-radius: 25px;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    background-color: rgba(190, 190, 170, 0.1);
+
+    font-size: 33px;
+
+}
+
+h2 {
+    background-color: rgba(190, 190, 170, 0.1);
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+img {
+
+    width: 375px;
+    height: 375px;
+    object-fit: cover;
+}
+
+
+
+
+.album {
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* height: 600px; */
+    width: 375px;
+    overflow-x: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+
+@media (min-width: 420px) {
+    img {
+        width:500px;
+        height: 500px;
+    }
+}
+
+@media (min-width: 420px) {
+    .album {
+        width:500px;
+        height: 589px;
+    }
+}
+
+.txtimg {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.text-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque
+}
+
+.button-bonus {
+background-color: rgb(224, 226, 104, 0.1);
+    
+}
+
+.button-bonus button {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10%;
+    background-color: rgb(116, 185, 218);
+    color: rgb(99 28 212);
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 20%);
+}
+
+.arrow {
+    background-color: rgb(153, 184, 196);
+    color: bisque;
+}
+
+.btn {
+    margin-top: -1%;
+    background-color: rgb(153, 184, 196);
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 50%;
+
+}
+
+#left {
+    border-bottom-left-radius: 20px;
+}
+
+#right {
+    border-bottom-right-radius: 20px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:focus {
+    outline: none;
+}
